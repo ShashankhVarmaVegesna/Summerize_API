@@ -42,7 +42,9 @@ exports.summarizeText = async (req, res) => {
     res.json({ summary: sentences.join(' ') });
 
   } catch (err) {
-    console.error(err.message);
-    res.status(500).json({ error: 'Something went wrong while summarizing.' });
+    const errorInfo = err.response?.data || err.message || err;
+    console.error("Azure Summarization Error:", errorInfo);
+    res.status(500).json({ error: errorInfo });
   }
+  
 };
