@@ -36,8 +36,8 @@ An intelligent API that uses **Azure AI Language Service** to generate meaningfu
 ### 📥 Installation
 
 ```bash
-git clone https://github.com/ShashankhVarmaVegesna/azure-summarizer-api.git
-cd azure-summarizer-api
+git clone https://github.com/ShashankhVarmaVegesna/Summerize_API.git
+cd Summerize_API
 npm install
 ```
 
